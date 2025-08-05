@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Forum - Réseau+</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <div class="logo">Réseau+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="cours.html">Cours</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="projets.html">Projets</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+        <section class="intro">
+            <h2>Pose ta question ou partage une idée</h2>
+            <p>Discute avec la communauté Réseau+ et aide-toi à progresser.</p>
+        </section>
+
+        <section class="nouveau-message">
+            <form id="form-forum">
+                <label for="pseudo">Pseudo :</label><br>
+                <input type="text" id="pseudo" name="pseudo" required><br><br>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="liste-messages">
+            <h3>Discussions récentes</h3>
+            <div id="messages-container">
+                <!-- Messages affichés ici -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Réseau+. Développé par FOFANA NOUFOU MOUSTAPHA.</p>
+    </footer>
+
+    <script src="js/forum.js"></script>
+</body>
+</html>

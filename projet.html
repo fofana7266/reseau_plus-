@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets étudiants - Réseau+</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <div class="logo">Réseau+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="cours.html">Cours</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="projets.html">Projets</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+        <section class="intro">
+            <h2>Partage tes projets réseau avec la communauté !</h2>
+            <p>Présente ton projet, partage ton expérience, et inspire les autres étudiants.</p>
+        </section>
+
+        <section class="nouveau-projet">
+            <h3>Soumettre un nouveau projet</h3>
+            <form id="form-projet">
+                <label for="titre">Titre du projet :</label><br>
+                <input type="text" id="titre" name="titre" required><br><br>
+
+                <label for="description">Description :</label><br>
+                <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+                <label for="lien">Lien (GitHub, site, vidéo) :</label><br>
+                <input type="url" id="lien" name="lien" placeholder="https://"><br><br>
+
+                <button type="submit">Publier</button>
+            </form>
+        </section>
+
+        <section class="liste-projets">
+            <h3>Projets récents</h3>
+            <div id="projets-container">
+                <!-- Projets ajoutés apparaîtront ici -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Réseau+. Développé par FOFANA NOUFOU MOUSTAPHA.</p>
+    </footer>
+
+    <script src="js/projets.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Réseau+</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Réseau+</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>Test tes connaissances en Réseaux</h2>
+            
+            <div class="question">
+                <p>1. Quelle couche du modèle OSI gère les adresses IP ?</p>
+                <input type="radio" name="q1" value="a"> Couche application<br>
+                <input type="radio" name="q1" value="b"> Couche transport<br>
+                <input type="radio" name="q1" value="c"> Couche réseau<br>
+            </div>
+
+            <div class="question">
+                <p>2. Quel appareil permet de relier deux réseaux différents ?</p>
+                <input type="radio" name="q2" value="a"> Switch<br>
+                <input type="radio" name="q2" value="b"> Routeur<br>
+                <input type="radio" name="q2" value="c"> Hub<br>
+            </div>
+
+            <div class="question">
+                <p>3. Quelle est l’adresse IP privée ?</p>
+                <input type="radio" name="q3" value="a"> 192.168.1.1<br>
+                <input type="radio" name="q3" value="b"> 8.8.8.8<br>
+                <input type="radio" name="q3" value="c"> 172.34.0.1<br>
+            </div>
+
+            <button onclick="corrigerQuiz()">Soumettre</button>
+
+            <p id="resultat"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Réseau+. Développé par FOFANA NOUFOU MOUSTAPHA.</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
